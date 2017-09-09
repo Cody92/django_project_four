@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+{% extends "basic_app/base.html" %}
+{% block body_block %}
+    <div class="jumbotron">
+      <h1>Welcome to Relative URL Templates!</h1>
+      <!-- app_name mentioned in urls.py and the name in urls.py. app_name:url name -->
+      <a href="{% url 'basic_app:other' %}" class="btn btn-primary">The Other Page</a>
+      <a href="{% url 'admin:index' %}" class="btn btn-primary">Admin Page</a>
+      <a href="{% url 'index' %}" class="btn btn-primary">Index Page</a>
+    <div>
+{% endblock %}
